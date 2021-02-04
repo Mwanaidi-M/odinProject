@@ -1,0 +1,9 @@
+/* CSS variables are not compatible in IE */
+:root
+{
+    --bgcolor:  #E5C687;
+    --txtcolor:   #121619;
+    --elementcolor: #09814A;
+    --bgelement:    #2D4739;
+    --tercolor:     #BCB382;
+}
