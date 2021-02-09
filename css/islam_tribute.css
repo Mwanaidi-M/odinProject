@@ -1,0 +1,101 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: "Josefin Sans" ;
+    font-size: 16px;
+    background-color: #eae0d5;
+    color: #22333b;
+}
+
+main
+{
+  
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+figure
+{
+    
+    padding: 5px;
+}
+figcaption
+{
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+#intro
+{
+    text-align: center;
+}
+#intro h1
+{
+    font-size: 6em;
+}
+#hero-img
+{
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+article
+{
+    font-size: 1.2em;
+}
+article h4
+{
+    text-transform: capitalize;
+    border-top: 4px solid #0a0908;
+    border-bottom: 4px solid #0a0908;
+    text-align: center;
+    padding: 10px 0;
+}
+article ul, article ol
+{
+    line-height: 2em;
+}
+article ul li
+{
+    list-style-type: square;
+}
+#article1
+{
+    text-align: center;
+}
+#bottom-txt
+{
+    text-align: center;
+    font-size: 1.5em;
+}
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    color: green;
+}
+
+@media(max-width:720px)
+{
+    body
+    {
+        font-size: 14px;
+        background-color: #fdfcdc;
+        color: #f07167;
+    }
+    article h4
+    {
+        border-top: 4px solid #00afb9;
+        border-bottom: 4px solid #00afb9;
+    }
+    #hero-img
+    {
+        width: 100%;
+    }
+}
