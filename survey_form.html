@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/survey_form.css">
+
+    <title>NARRATIVE SURVEY FORM</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Narrative User Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div id="form-container">
+            <section id="part1">
+                <img src="img/im103.jpg" alt="form-pic" id="form-pic">
+            </section>
+            <form action="#" id="survey-form">
+                <div class="item">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                </div>
+                
+                 <div class="item">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required> <br>
+                </div>
+    
+                <div class="item">
+                    <label for="number" id="number-label">Age(optional)</label><br>
+                    <input type="number" name="number" id="number" min="18" max="90" placeholder="Age"><br>
+                </div>
+            
+                <div class="item">
+                    <label for="dropdown">What option best describes your current role?</label><br>
+                <select name="role" id="dropdown">
+                    <option value="Select current role" name="curr-role">Select current role</option>
+                    <option value="Student" name="std">Student</option>
+                    <option value="Full Time Job<" name="ftj">Full Time Job</option>
+                    <option value="Full Time Learner" name="ftl">Full Time Learner</option>
+                    <option value="Prefer not to say" name="pnts">Prefer not to say</option>
+                    <option value="Other" name="other">Other</option>
+                </select>
+                </div>
+                
+                <div class="item">
+                    <label for="recc">Would you recommend Narrative to a friend?</label><br>
+                    <div>
+                        <input type="radio" name="recc" id="recc" value="Definitely">Definitely <br>
+                        <input type="radio" name="recc" id="recc" value="Maybe">Maybe <br>
+                        <input type="radio" name="recc" id="recc" value="Not Sure">Not Sure <br>
+                    </div>  
+                </div>
+                
+                <div class="item">
+                    <label for="opt">What is your favorite feature of Narrative?</label><br>
+                    <select name="opt" id="opt">
+                        <option value="Select and option" name="opt0">Select and option</option>
+                        <option value="Challenges" name="opt1">Challenges</option>
+                        <option value="Projects" name="opt2">Projects</option>
+                        <option value="Community" name="opt3">Community</option>
+                        <option value="Open Source" name="opt4">Open Source</option>
+                    </select><br>
+                </div>
+                
+                <div class="item">
+                    <label for="checkopt">What would you like to see improved? (Check all that apply)</label><br>
+                    <div>
+                        <input type="checkbox" name="ch1" id="checkopt" value="Front-end Projects">Front-end Projects <br>
+                        <input type="checkbox" name="ch2" id="checkopt"value="Back-end Projects">Back-end Projects <br>
+                        <input type="checkbox" name="ch3" id="checkopt"value="Data Visualization">Data Visualization <br>
+                        <input type="checkbox" name="ch4" id="checkopt"value="Challenges">Challenges <br>
+                        <input type="checkbox" name="ch5" id="checkopt"value="Open Source Community">Open Source Community <br>
+                        <input type="checkbox" name="ch6" id="checkopt"value="Gitter help rooms">Gitter help rooms <br>
+                        <input type="checkbox" name="ch7" id="checkopt"value="Videos">Videos <br>
+                        <input type="checkbox" name="ch8" id="checkopt"value="City Meetups">City Meetups <br>
+                        <input type="checkbox" name="ch9" id="checkopt"value="Wiki">Wiki <br>
+                        <input type="checkbox" name="ch10" id="checkopt" value="Forum">Forum <br>
+                        <input type="checkbox" name="ch11" id="checkopt" value="Additional Courses">Additional Courses <br>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <label for="txtarea">Any comments or suggestions?</label><br>
+                    <textarea name="txtarea" id="txtarea"></textarea><br>
+                </div>
+                
+                <div class="itemb">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer id="footer"> &#169;Narrative Corp</footer>
+</body>
+</html>

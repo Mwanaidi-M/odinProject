@@ -1,0 +1,30 @@
+section
+{
+    border: 2px solid green;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1em;
+}
+article
+{
+    padding: 10px;
+    background: coral;
+    height: 4em;
+}
+
+
+@media(min-width:600px)
+{
+    section
+    {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media(min-width:900px)
+{
+    section
+    {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
