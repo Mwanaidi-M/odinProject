@@ -1,0 +1,117 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+header #logo
+{
+    font-size: 1.6rem;
+}
+header #logo span
+{
+    color: coral;
+}
+header nav a
+{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin-right: 20px;
+}
+header nav a:last-child
+{
+    color: wheat;
+    background: coral;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+header nav a:hover
+{
+    opacity: 0.7;
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem auto 0;
+    height: 900px;
+
+    background: url(../img/wave.svg);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+main section
+{
+    margin-top: 3rem;
+    margin-left: 10%;
+    width: 35%;
+}
+main section h1
+{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 30px;
+    line-height: 1em;
+}
+main section h1 span
+{
+    color:coral;
+    font-size: 3.7rem;
+}
+main section p
+{
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+main section button
+{
+    border:none;
+    outline: none;
+    color: wheat;
+    background: coral;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px 0;
+    margin-top: 16px;
+    width: 160px;
+    cursor: pointer;
+}
+main section button:hover
+{
+    opacity: 0.7;
+}
+main div img
+{
+    min-width: 56vw;
+    min-height: 550px;
+    width: 100%;
+}
+
+@media(max-width:900px)
+{
+    header nav a:not(:last-child), #image-container
+    {
+        display: none;
+    }
+    main section
+    {
+        width: 80%;
+    }
+}
