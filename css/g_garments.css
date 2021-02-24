@@ -1,0 +1,231 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header
+{
+    background-color: burlywood;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+#h1-header h1{
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+}
+#h1-header h1 a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#nav-bar ul
+{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    /* min-height: 8vh; */
+}
+#nav-bar ul li
+{
+    list-style: none;
+}
+#nav-bar ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.top-container
+{
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 100vh;
+    /* border: 3px solid black; */
+    /* margin-top: 70px; */
+    margin: 70px auto 0 auto;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/h1.jpg") no-repeat center center/cover;
+}
+/* .top-container::before
+{
+    content: "";
+    background: url("../img/h1.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+} */
+.top-h3
+{
+    /* border: 2px solid green; */
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    padding: 20px;
+    text-align: center;
+}
+.top-h3 h3
+{
+    font-size: 7rem;
+    text-transform: uppercase;
+    
+}
+.top-h3 span
+{
+    font-size: 3.5rem;
+    font-family: 'Courgette', cursive;
+}
+.brands-container
+{
+    background-color: chocolate;
+    width: 100%;
+    height: 50vh;
+    /* border: 3px solid black; */
+    margin: 10px auto;
+    padding: 4rem 1rem;
+    overflow: hidden;
+}
+.brands
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.brands div
+{
+    border: 2px solid cadetblue;
+    padding: 40px;
+    text-align: center;
+}
+.brands div p
+{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#shop
+{
+    background-color: cyan;
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    /* overflow: auto; */
+    margin: 10px auto;
+    padding: 1rem ;
+}
+.feat
+{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+.feat h3::before,
+.feat h3::after
+{
+    display: inline-block;
+    content: "";
+    width: 25%;
+    height: 5px;
+    border-top: 2px solid green;
+    margin: 0 2rem;
+    transform: translateY(0rem);
+}
+.feat-items
+{
+    /* border: 2px solid slategrey; */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.feat-items img
+{
+    width: 240px;
+}
+#video
+{
+    background-color: darkgray;
+    width: 100%;
+    min-height: 50vh;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+}
+video
+{
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    width: 640px;
+}
+.form-container
+{
+    background-color: darksalmon;
+    width: 100%;
+    height: 40vh;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.form-header
+{
+    padding: 1.2rem;
+    text-align: center;
+    line-height: 30px;
+}
+form
+{
+    /* border: 2px solid black; */
+    font-size: 1.2rem;
+}
+form label
+{
+    display: block;
+    /* border: black solid 2px; */
+    padding: 1rem;
+    text-align: center;
+}
+form input
+{
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+#submit
+{
+    display: block;
+    margin: auto;
+}
+footer
+{
+    background-color: deeppink;
+    width: 100%;
+    min-height: 5vh;
+    padding: 1rem;
+    text-align: center;
+}
+
