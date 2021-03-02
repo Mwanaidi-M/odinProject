@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CSS Documentation(FreeCodeCamp)</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="header">
+            <h1>CSS Documentation</h1>
+        </header>
+
+        <a href="#introduction" class="nav-link">introduction</a>
+        <a href="#outline" class="nav-link">outline</a>
+        <a href="#Cursor" class="nav-link">cursor</a>
+        <a href="#Overflow" class="nav-link">overflow</a>
+        <a href="#Visual_Formatting_Model" class="nav-link">visual formatting model</a>
+        <a href="#Display" class="nav-link">display</a>
+        <a href="#visibility" class="nav-link">visibility</a>
+        <a href="#layers" class="nav-link">layers</a>
+        <a href="#Pseudo-classes" class="nav-link">pseudo-classes</a>
+    </nav>
+    
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h1>introduction</h1>
+            </header>
+            <p>
+                CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the 
+                presentation (i.e. the layout and formatting) of the web pages.
+            </p>
+            <p>
+                CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and 
+                improvements to enhance the web presentation capabilities.
+            </p>
+            <p>
+                What can you do with CSS:
+                <ul>
+                    <li>
+                        You can easily apply same style rules on multiple elements.
+                    </li>
+                    <li>
+                        You can control the presentation of multiple pages of a website with a single style sheet.
+                    </li>
+                    <li>
+                        You can present the same page differently on different devices.
+                    </li>
+                    <li>
+                        You can style dynamic states of elements such as hover, focus, etc. that isn't possible otherwise.
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="outline">
+            <header>
+                <h1>outline</h1>
+            </header>
+            <p>
+                The CSS outline properties allow you to define an outline area around an element's box.
+
+                An outline is a line that is drawn just outside the border edge of the elements. Outlines are generally used 
+                to indicate focus or active states of the elements such as buttons, links, form fields, etc.
+            </p>
+            <p>
+                The outline-style property sets the style of an element's outline. It can have one of the following 
+                values: <em>none, solid, dashed, dotted, double, inset, outset, groove, and ridge.</em>
+            </p>
+            <p>
+                Example in code:
+                <code>
+                    <pre>
+                        h1 {
+                            outline-style: dotted;
+                        }
+                        p {
+                            outline-style: ridge;
+                        }
+                    </pre>
+                </code>
+            </p>
+        </section>
+        <section class="main-section" id="Cursor">
+            <header>
+                <h1>Cursor</h1>
+            </header>
+            <p>
+                CSS cursor property used to define cursor type (i.e. mouse pointer) when the mouse moves over a certain area 
+                or, over a link on the webpage.
+            </p>
+            <p>
+                The browsers typically display the mouse pointer over any blank part of a web page, the gloved hand over 
+                any linked or clickable item and the edit cursor over any text or text field. With CSS you can redefine those 
+                properties to display a variety of different cursors.
+            </p>
+            <p>
+                Example:
+                <code>
+                    <pre>
+                        h1 {
+                            cursor: move;
+                        }
+                    </pre>
+                </code>
+            </p>
+
+            <p>
+                If none of the user-defined cursors is valid or supported by the browser, the generic cursor at the end of the list 
+                will be used instead.
+                <br>
+                <code>
+                    <pre>
+                        a {
+                            cursor: url("custom.gif"), url("custom.cur"), default;
+                        }
+                    </pre>
+                </code>
+            </p>
+        </section>
+        <section class="main-section" id="Overflow">
+            <header>
+                <h1>Overflow</h1>
+            </header>
+            <p>
+                The overflow property specifies the behavior that occurs when an element's content overflows (doesn't fit) 
+                the element's box.
+            </p>
+            <p>
+                CSS overflow property allowing you to specify whether to clip content, render scroll bars or display overflow 
+                content of a <strong>block-level</strong> element.
+            </p>
+            <p>
+                This property can take one of the following values: <em>visible (default), hidden, scroll</em>, and <em>auto</em>. CSS3 also defines 
+                the <strong>overflow-x </strong> and <strong>overflow-y</strong> properties which allow for independent control of 
+                the vertical and horizontal clipping.
+                <br>
+                <code>
+                    <pre>
+                        div {
+                            width: 250px;
+                            height: 150px;
+                            overflow: scroll;
+                        }
+                    </pre>
+                </code>
+            </p>
+        </section>
+        <section class="main-section" id="Visual_Formatting_Model">
+            <header>
+                <h1>Visual Formatting Model</h1>
+            </header>
+            <p>
+                The CSS visual formatting model is the algorithm that is used to process the documents for visual media. In the visual 
+                formatting model, each element in the document tree generates zero or more boxes according to the box model.
+            </p>
+            <p>
+                The layout of these boxes is depends on the following factors:
+                <ul>
+                    <li>box dimensions.</li>
+                    <li>type of the element (block or inline).</li>
+                    <li>positioning scheme (normal flow, float, and absolute positioning).</li>
+                </ul>
+            </p>
+            <p>
+                Block-level elements are those elements that are formatted visually as blocks (i.e. takes up the full width 
+                available), with a line break before and after the element. 
+            </p>
+            <p>
+                Inline-level elements are those elements of the source document that do not form new blocks of content; the content 
+                is distributed in lines.
+            </p>
+        </section>
+        <section class="main-section" id="Display">
+            <header>
+                <h1>Display</h1>
+            </header>
+            <p>
+                The display property controls the box's type generated by an element. The <strong> &lt;div&gt; </strong>element is rendered as block, 
+                while the <strong>&lt;span&gt;</strong>  element is displayed inline.
+            </p>
+            <p>
+                Example:
+                <br>
+                <code>
+                    <pre>
+                        span {
+                            display: block;
+                        }
+                        a {
+                            display: inline;
+                        }
+                    </pre>
+                </code>
+            </p>
+        </section>
+        <section class="main-section" id="visibility">
+            <header>
+                <h1>visibility</h1>
+            </header>
+            <p>
+                This property is used to control whether an element is visible or not. 
+                This property can take one of the following values listed in the table below:
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            visible
+                        </td>
+                        <td>
+                            Default value. The box and its contents are visible.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            hidden
+                        </td>
+                        <td>
+                            The box and its content are invisible, but still affect the layout of the page.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            collapse
+                        </td>
+                        <td>
+                            This value causes the entire row or column to be removed from the display. This value is used for row, row group, column, and column group elements.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            inherit
+                        </td>
+                        <td>
+                            Specifies that the value of the visibility property should be inherited from the parent element i.e. takes the same visibility value as specified for its parent.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="main-section" id="layers">
+            <header>
+                <h1>layers</h1>
+            </header>
+            <p>
+                The CSS z-index property can be used in conjugation with the position property to create an effect of layers like Photoshop.
+            </p>
+            <p>
+                The z-axis position of each layer is expressed as an integer representing the stacking order for rendering. An element with a 
+                larger z-index overlaps an element with a lower one.
+            </p>
+        </section>
+        <section class="main-section" id="Pseudo-classes">
+            <header>
+                <h1>Pseudo-classes</h1>
+            </header>
+            <p>
+                The CSS pseudo-classes allow you to style the dynamic states of an element such as hover, active and focus state, 
+                as well as elements that are existing in the document tree but can't be targeted via the use of other selectors without 
+                adding any IDs or classes to them, for example, targeting the first or last child elements.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
