@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hunger Games Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Happy Hunger Games!</h1>
+        <hr>
+        <hr>
+        <h3>May the odds be ever in your favor.</h3> 
+    </header>
+
+    <main class="main-content">
+        <form action="#" class="form">
+            <div class="form-label">
+                <label for="full-name"> &ast; Full Name </label>
+            </div>
+            <div class="form-input">
+                <input type="text" name="full-name" id="full-name" placeholder="Your name..." required>
+            </div>
+
+            <div class="form-label">
+                <label for="u-email"> &ast; Email </label>
+            </div>
+            <div class="form-input">
+                <input type="email" name="u-email" id="u-email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-label">
+                <label for="u-age"> &ast; Age </label>
+            </div>
+            <div class="form-input">
+                <input type="number" name="u-age" id="u-age" min="18" max="80" required>
+            </div>
+
+            <div class="form-label">
+                <label for="u-sequel"> How many sequels of The Hunger Games have you watched?</label>
+            </div>
+            <div class="form-input">
+                <select name="u-sequel" id="u-sequel">
+                    <option value="Select an answer" name="ans1" selected disabled>Select an answer</option>
+                    <option value="Just 1" name="ans2">Just 1</option>
+                    <option value="All of them" name="ans3">All of them</option>
+                    <option value="None of them" name="ans4">None of them</option>
+                </select>
+            </div>
+
+            <div class="form-label">
+                <label for="u-like">How much do you like The Hunger Games?</label>
+            </div>
+            <div class="form-input">
+                <input type="radio" name="u-like" id="u-like" value="It's okay"> It's okay. <br>
+                <input type="radio" name="u-like" id="u-like" value="I like it"> I like it. <br>
+                <input type="radio" name="u-like" id="u-like" value="I love it"> I love it. <br>
+                <input type="radio" name="u-like" id="u-like" value="Not really"> Not really. <br>
+            </div>
+
+            <div class="form-label">
+                <label for="u-partner">Who have you watched The Hunger Games with? (Pick all that apply)</label>
+            </div>
+            <div class="form-input">
+                <input type="checkbox" name="u-partner" id="u-partner" value="alone"> Alone <br>
+                <input type="checkbox" name="u-partner" id="u-partner" value="friends"> Friends <br>
+                <input type="checkbox" name="u-partner" id="u-partner" value="family"> Family <br>
+                <input type="checkbox" name="u-partner" id="u-partner" value="partner"> Partner <br>
+                <input type="checkbox" name="u-partner" id="u-partner" value="other"> Other <br>
+            </div>
+
+            <div class="form-label">
+                <label for="u-view"> Tell us more about your favorite character(s) or scene(s) from The Hunger Games</label>
+            </div>
+            <div class="form-input">
+                <textarea name="u-view" id="u-view" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
