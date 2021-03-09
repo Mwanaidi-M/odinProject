@@ -30,6 +30,10 @@ ul li
     list-style:square;
     margin-left: 17px;
 }
+abbr
+{
+  text-decoration: none;
+}
 .m-logo
 {
     width: 60px;
@@ -61,7 +65,7 @@ ul li
 {
     display: inline-block;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: 'Shippori Mincho B1', serif;
 }
 .nav-link:hover
@@ -82,7 +86,7 @@ ul li
 .hero-section
 {
     
-    background: url("./portfolio/hero1.jpg");
+    background: url("https://images.unsplash.com/photo-1554787388-9194e4eb57a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,8 +101,8 @@ ul li
     position: absolute;
     top: 0;
     left: 0;
-    background: grey;
-    opacity: .6;
+    background: rgb(109,103,110);
+    opacity: .8;
     z-index: -1;
 }
 .content
@@ -137,6 +141,14 @@ ul li
     color: #494749;
     font-size: 1.2rem;
 }
+.about-info p
+{
+    line-height: 2.1rem;
+}
+#projects
+{
+    background: rgba(109,103,110, .8);
+}
 .project-tile
 {
     display: flex;
@@ -146,10 +158,11 @@ ul li
     margin: 20px 0;
     position: relative;
     cursor: pointer;
+    background: #FBFFFE;
 }
 .project-title
 {
-    padding-top: 20px;
+    padding: 20px 10px;
     text-transform: capitalize;
     color: #494749;
 }
@@ -162,6 +175,9 @@ ul li
 .project-tile:hover span
 {
     opacity: 1;
+    font-size: 1.5rem;
+    color: rgba(250,169,22, 0.95);
+
 }
 .project-desc
 {
@@ -169,7 +185,7 @@ ul li
     top: 0;
     left: 0;
     width: 100%;
-    height: 91%;
+    height: 88%;
     opacity: 0;
     background: rgba(250,169,22, 0.95);
     padding: 30px;
@@ -182,6 +198,7 @@ ul li
 {
     opacity: 1;
 }
+
 .contact-heading
 {
     margin-bottom: 70px;
@@ -205,7 +222,8 @@ ul li
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 .contact-links i
 {
@@ -220,4 +238,115 @@ ul li
 .contact-links a:hover
 {
     color: #FAA916;
+    transform: scale(1.1);
+}
+.portfolio-footer
+{
+    width: 100%;
+    height: 8vh;
+    background: rgba(109,103,110,.7);
+    padding: 15px;
+}
+footer
+{
+    font-size: 1.1rem;
+    text-align: center;
+    color: #FBFFFE;
+}
+
+@media only screen and (min-width:600px)
+{
+    .main-header
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+  }
+  .m-logo
+  {
+    margin-left: 20px;
+  }
+  #navbar
+  {
+    width: 40%;
+  }
+  .nav-link
+  {
+    text-transform: uppercase;
+  }
+  #about img
+  {
+    width: 50%;
+  }
+  .project-tile
+  {
+    width: 80%;
+  }
+  .project-desc
+  {
+    height:92%;
+  }
+  .contact-links a
+  {
+    font-size: 1.1rem;
+  }
+  .contact-links a:hover
+  {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width:1024px)
+{
+
+  #about
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  #about img
+  {
+    width: 55%;
+    border-radius: 10%;
+  }
+  .about-info p
+  {
+    line-height: 2.4rem;
+  }
+
+  .contact-links
+  {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-links a
+  {
+    padding: 15px;
+  }
+  #projects
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-tile
+  {
+    flex-basis: 40%;
+    margin: 20px;
+  }
+  .project-desc
+  {
+    height: 87%;
+  }
+}
+@media only screen and (min-width:1140px)
+{
+    .project-tile
+    {
+      flex-basis: 25%;
+    }
+    .project-desc
+    {
+      height: 87%;
+    }
 }
